@@ -68,7 +68,7 @@ font-weight: 500;
 .item:active { 
     text-decoration: underline;
 }
-.address-list {
+.tel, .email {
     color: var(--slate);
     font-style: normal;
     line-height: 1.5;
