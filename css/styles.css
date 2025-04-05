@@ -56,13 +56,22 @@ button:hover{
 .logo-accent {
     color: var(--iris);
 }
-.main-nav {
-    color: var(--slate);
+.item-nav {
+line-height: 1.5;
+color: var(--navy-blue);
+font-weight: 500;
+}
+.item {line-height: 1.5;
+    color: var(--navy-blue);
     font-weight: 500;
+}
+.item:active { 
+    text-decoration: underline;
 }
 .address-list {
     color: var(--slate);
     font-style: normal;
+    line-height: 1.5;
 }
 .hero {
     background: var(--navy-blue);
