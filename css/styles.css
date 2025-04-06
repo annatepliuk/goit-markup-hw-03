@@ -51,8 +51,7 @@ letter-spacing: 0.04em;
     color:#4d5ae5;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
-    font-family: Releway, sans-serif;
+    font-family: "Raleway", sans-serif;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -114,6 +113,14 @@ font-size: 36px;
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+}
+.portfolio-title {
+    line-height: 1.11;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 .main-heading {
     font-weight: 500;
