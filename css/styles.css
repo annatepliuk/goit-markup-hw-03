@@ -59,22 +59,13 @@ letter-spacing: 0.04em;
 }
 .logo-accent {
     color:#2e2f42;
-}
-.item-nav {
-line-height: 1.5;
-color: var(--navy-blue);
-font-weight: 500;
-letter-spacing: 0.02em;
-}
-.item-nav:hover{
-    color:#404bbf;
 } 
 .item {line-height: 1.5;
     color: var(--navy-blue);
     font-weight: 500;
     letter-spacing: 0.02em;
 }
-.item:active,.item:hover { 
+.item:active,.item:hover,.item:focus { 
     text-decoration: underline;
     color: #404bbf;
 }
@@ -110,9 +101,12 @@ letter-spacing: 0.02em;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.servise {
+.page-section {
     background-color: #F4F4FD;
 }
+.team-member {
+    background-color: #FFFFFF
+}gi
 .section-title {
 line-height: 1.11;
 font-weight: 700;
@@ -129,8 +123,6 @@ text-transform: capitalize;
 }
 .footer {
     background: var(--navy-blue);
-    width: 1440px;
-    height: 312px;
 }
 .footer-text {
     color: var(--cloud);
