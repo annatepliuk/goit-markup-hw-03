@@ -25,29 +25,39 @@ body {
 a {
     text-decoration: none;
 }
-ul {
+ul, ol {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 h2,h3 {
     color: var(--navy-blue);
 }
-.button {
-background: var(--iris);
-font-weight: 500;
-line-height: 1.5;
-color: var(--white);
-cursor: pointer;
-font-family: "Roboto", sans-serif;
-letter-spacing: 0.04em;
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 } 
-.button:focus{
-    background-color: #404BBF;
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
 }
-.button:hover{
-    background-color: var(--ocean);
+.header-container {
+    display: flex;
+    align-items: center;
 }
-
-.logo-header{
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.logo {
     color:#4d5ae5;
     font-weight: 700;
     font-size: 18px;
@@ -56,27 +66,49 @@ letter-spacing: 0.04em;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.logo-accent {
-    color:#2e2f42;
-} 
-.item {line-height: 1.5;
-    color: var(--navy-blue);
+.header-logo .logo-part {
+    color: #2e2f42;
+}
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+ .footer-logo .logo-part {
+    color: #f4f4fd;
+}
+.nav-link {
+    line-height: 1.5;
+    color: #2e2f42;
     font-weight: 500;
     letter-spacing: 0.02em;
+    display: block;
+    padding: 24px 0;
 }
-.item:active,.item:hover,.item:focus { 
+.nav-link:active,
+.nav-link:hover,
+.nav-link:focus { 
     text-decoration: underline;
     color: #404bbf;
 }
-.address {
+.contacts {
     font-style: normal;
+    margin-left: auto;
 }
-.contact-input {
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.contacts-link {
+    display: block;
+    padding: 24; 0;
+    font-size: 16px;
     color: var(--slate);
     line-height: 1.5;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
 }
-.contact-input:hover, .contact-input:focus {
+.contacts-link:hover, 
+.contacts-link:focus {
     color:#404bbf;
 }
 .hero {
@@ -89,6 +121,23 @@ letter-spacing: 0.04em;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+}
+.button {
+    background: var(--iris);
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--white);
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.04em;
+}
+
+.button:focus {
+    background-color: #404BBF;
+}
+
+.button:hover {
+    background-color: var(--ocean);
 }
 .heading-style {
         font-weight: 500;
@@ -135,16 +184,4 @@ text-transform: capitalize;
     color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-.logo-footer {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color:#4d5ae5;
-}
-.logo-accent-footer {
-    color:#f4f4fd;
 }
