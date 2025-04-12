@@ -47,6 +47,7 @@ img {
 } 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    width: 1158px;
 }
 .header-container {
     display: flex;
@@ -123,6 +124,7 @@ img {
     background: var(--navy-blue);
     text-align: center;
     width: 100%;
+    padding: 188px 0;
 }
 .hero-title {
     color: var(--white);
@@ -131,7 +133,7 @@ img {
     line-height: 1.07;
     letter-spacing: 0.02em;
     margin: 0 auto;
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 48px;
 }
 
@@ -145,7 +147,10 @@ img {
     letter-spacing: 0.04em;
     margin: 0 auto;
     border-radius: 4px;
-    padding: 16px 32px;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .button:focus {
@@ -155,10 +160,22 @@ img {
 .button:hover {
     background-color: var(--ocean);
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 .features-list {
     display: flex;
-    flex-basis: calc((100% - 3 * 24px) / 4);
     gap: 24px;
+}
+.features-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .heading-style {
@@ -166,6 +183,7 @@ img {
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
 }
 .text {
     line-height: 1.5;
@@ -189,6 +207,7 @@ img {
     justify-content: center;
     flex-direction: column;
     gap: 8px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .team-title {
 line-height: 1.11;
@@ -204,7 +223,7 @@ text-align: center;
     display: flex;
     gap: 24px;
     justify-content: center;
-    flex-basis: calc((100% - 3 * 24px) / 4);
+
 }
 
 .main-heading {
@@ -225,10 +244,13 @@ text-align: center;
 }
 .portfolio-list-container {
 display: flex;
-gap: 24px 48px;
+column-gap: 24px;
+row-gap: 48px;
 justify-content: center;
-flex-basis: calc((100% - 2 * 24px) / 3);
 flex-wrap: wrap;
+}
+.portfolio-list {
+flex-basis: calc((100% - 2 * 24px) / 3);
 }
 .portfolio-text {
 border-bottom: 1px solid var(--cornflower);
@@ -242,6 +264,7 @@ padding: 32px 16px;
 .footer {
     background: var(--navy-blue);
     width:100%;
+    padding: 100px 0;
 }
 .footer-text {
     color: var(--cloud);
@@ -250,9 +273,8 @@ padding: 32px 16px;
     width: 264px;
     margin-top : 16px;
 }  
-.footer-container {
-padding: 100px 0;
-}
+
 .footer-logo{
     margin-bottom: 16px;
+    display: inline-block;
 }
