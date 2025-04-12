@@ -30,11 +30,10 @@ ul {
     padding: 0;
     margin: 0;
 }
-h2,h3 {
-    color: var(--navy-blue);
-}
+
 h1,h2,h3,p {
     margin: 0;
+    color: var(--navy-blue)
 }
 img {
     max-width: 100%;
@@ -123,6 +122,7 @@ img {
 .hero {
     background: var(--navy-blue);
     text-align: center;
+    width: 100%;
 }
 .hero-title {
     color: var(--white);
@@ -132,9 +132,9 @@ img {
     letter-spacing: 0.02em;
     margin: 0 auto;
     width: 496px;
-    padding-bottom: 48px;
-
+    margin-bottom: 48px;
 }
+
 .button {
     background: var(--iris);
     font-weight: 500;
@@ -157,8 +157,8 @@ img {
 }
 .features-list {
     display: flex;
-        flex-basis: calc((100% - 3 * 24px) / 4);
-        gap: 24px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    gap: 24px;
 }
 
 .heading-style {
@@ -190,7 +190,7 @@ img {
     flex-direction: column;
     gap: 8px;
 }
-.s-title {
+.team-title {
 line-height: 1.11;
 font-weight: 700;
 font-size: 36px;
@@ -221,7 +221,7 @@ text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
-    text-align: center;
+
 }
 .portfolio-list-container {
 display: flex;
@@ -231,17 +231,27 @@ flex-basis: calc((100% - 2 * 24px) / 3);
 flex-wrap: wrap;
 }
 .portfolio-text {
-    border-bottom: 1px solid var(--cornflower);
-    border-left: 1px solid var(--cornflower);
-    border-right: 1px solid var(--cornflower);
-    padding: 32px 16px;
+border-bottom: 1px solid var(--cornflower);
+border-left: 1px solid var(--cornflower);
+border-right: 1px solid var(--cornflower);
+padding: 32px 16px;
+}
+.main-heading {
+    margin-bottom: 8px;
 }
 .footer {
     background: var(--navy-blue);
+    width:100%;
 }
 .footer-text {
     color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
+}  
+.footer-container {
+padding: 100px 0;
+}
+.footer-logo {
+    margin-bottom: 16px;
 }
