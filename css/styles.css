@@ -248,10 +248,11 @@ padding: 32px 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
+    margin-top : 16px;
 }  
 .footer-container {
 padding: 100px 0;
 }
-.footer-logo {
+.footer-logo{
     margin-bottom: 16px;
 }
