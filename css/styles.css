@@ -25,7 +25,7 @@ body {
 a {
     text-decoration: none;
 }
-ul, ol {
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 .contacts-link {
     display: block;
-    padding: 24; 0;
+    padding: 24px 0;
     font-size: 16px;
     color: var(--slate);
     line-height: 1.5;
@@ -111,6 +111,10 @@ h1,h2,h3,h4,h5,h6,p {
 .contacts-link:focus {
     color:#404bbf;
 }
+.section {
+padding: 120px 0;
+}
+
 .hero {
     background: var(--navy-blue);
     text-align: center;
@@ -121,6 +125,10 @@ h1,h2,h3,h4,h5,h6,p {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin: 0 auto;
+    word-wrap: break-word;
+    width: 496px;
+
 }
 .button {
     background: var(--iris);
@@ -130,6 +138,9 @@ h1,h2,h3,h4,h5,h6,p {
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.04em;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .button:focus {
@@ -139,6 +150,16 @@ h1,h2,h3,h4,h5,h6,p {
 .button:hover {
     background-color: var(--ocean);
 }
+.features-list {
+    text-align: center;
+}
+.features-item {
+    display: inline-block;
+    width: calc((100% - 3 * 24px) / 4);
+    padding: 0;
+    margin-right: 24px;
+}
+
 .heading-style {
         font-weight: 500;
         font-size: 20px;
@@ -153,7 +174,14 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: #F4F4FD;
 }
 .team-member {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    padding: 0px 0px 32px 0px;
+    border-radius: 0 0 4px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
 }
 .s-title {
 line-height: 1.11;
@@ -162,6 +190,14 @@ font-size: 36px;
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+margin-bottom: 0 0 72px 0;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+
 }
 .portfolio-title {
     line-height: 1.11;
@@ -170,12 +206,18 @@ text-transform: capitalize;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 0 0 72px 0;
 }
 .main-heading {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+}
+.portfolio-title {
+display: flex;
+gap: 24px 48px;
+justify-content: center;
 }
 .footer {
     background: var(--navy-blue);
